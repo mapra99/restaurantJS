@@ -1,0 +1,52 @@
+body {
+  background: url('./../img/bg-primary.jpg') center/cover no-repeat fixed;
+  height: 100vh;
+  
+  font-family: 'Fira Code', monospace;
+  color: #ffffff;
+}
+
+h1{
+  font-size: 6em;
+  font-weight: 600;
+}
+
+p,li{
+  font-size: 1.75em;
+  font-weight: 600;
+  list-style-type: square;
+}
+
+main{
+  display: flex;
+  height: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.side-section{
+  padding: 50px;
+  display: flex;
+}
+
+#title {
+  width: 40vw;
+  align-items: center;
+}
+
+#content{
+  flex-direction: column;
+  justify-content: center;
+}
+
+#menu{
+  padding: 10px;
+}
+
+#menu li{
+  margin: 0 50px;
+}
+
+span{
+  color: #ccc91b;
+}
