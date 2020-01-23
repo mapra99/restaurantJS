@@ -1,1 +1,1 @@
-console.log('webpack bundled this succesfully');
+import './js/homepage';
