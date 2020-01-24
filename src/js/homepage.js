@@ -21,13 +21,13 @@ const displayHome = (() => {
   const menuDiv = document.createElement('div');
   menuDiv.id = 'menu';
   menuDiv.innerHTML = `
-<p>We offfer: </p>
-<ul>
-  <li><span>Byte</span>burger</li>
-  <li>Salad.<span>js</span></li>
-  <li><span>Reactive</span> soda</li>
-  <li>Hotdog</li>
-</ul>`;
+  <p>We offfer: </p>
+  <ul>
+    <li><span>Byte</span>burger</li>
+    <li>Salad.<span>js</span></li>
+    <li><span>Reactive</span> soda</li>
+    <li>Hotdog</li>
+  </ul>`;
   profileSection.appendChild(menuDiv);
 
   const moreDiv = document.createElement('div');

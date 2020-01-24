@@ -1,3 +1,4 @@
+/* General Rules */
 body {
   font-family: "Fira Code", monospace;
 }
@@ -12,12 +13,26 @@ h1 {
   font-weight: 600;
 }
 
+h2{
+  font-size: 2em;
+}
+
+h3{
+  font-size: 1.85em;
+}
+
 p,
 li {
   font-size: 1.75em;
   font-weight: 600;
   list-style-type: square;
 }
+
+span {
+  color: #ccc91b;
+}
+
+/* Intro Section */
 
 #intro {
   display: flex;
@@ -50,6 +65,34 @@ li {
   margin: 0 50px;
 }
 
-span {
-  color: #ccc91b;
+/* Details Section */
+
+#tab_list{
+  display: flex;
+  justify-content: space-around;
+}
+
+.tab {
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  padding: 5px;
+  margin: 10px 10%;
+}
+
+.tab:hover{
+  cursor: pointer;
+  background-color: rgb(235, 235, 235);
+}
+
+.active_tab{
+  border-bottom: 5px solid #b9b9c8;
+}
+
+.tab_content{
+  display: none;
+}
+
+.active_tab_content{
+  display: block;
 }
