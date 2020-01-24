@@ -1,5 +1,4 @@
 const path = require('path');
-const GoogleFontsPlugin = require('google-fonts-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -23,19 +22,12 @@ module.exports = {
           'file-loader',
         ],
       },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf|)$/,
+        use: [
+          'file-loader',
+        ],
+      },
     ],
   },
-  plugins: [
-    new GoogleFontsPlugin({
-      fonts: [
-        {
-          family: 'Fira Code',
-          variants: [
-            '500',
-            '600',
-          ],
-        },
-      ],
-    }),
-  ],
 };

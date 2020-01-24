@@ -1,4 +1,11 @@
 @import "reset";
+@font-face {
+  font-family: 'Fira Code';
+  src: url('./../tff/FiraCode-Bold.ttf') format('woff2'),
+       url('./../tff/FiraCode-Medium.ttf') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
 
 /* General Rules */
 body {

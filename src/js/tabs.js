@@ -32,7 +32,7 @@ const CreateTabs = (() => {
   ContactTab.addTabtoList(tabSection);
   ContactTab.addTabContentToList(tabSection);
 
-  tabList.childNodes.forEach((tab) => tab.addEventListener('click', switchActiveTab));
+  tabList.childNodes.forEach((tab) => { tab.addEventListener('click', switchActiveTab); });
   main.appendChild(tabSection);
 })();
 
