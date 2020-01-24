@@ -1,5 +1,3 @@
-import switchActiveTab from './tabGeneral';
-
 const MenuTab = (() => {
   const addTabtoList = (tabSection) => {
     const li = document.createElement('li');
@@ -8,8 +6,6 @@ const MenuTab = (() => {
     li.id = 'menu_tab';
     li.setAttribute('data-tab', 'menu');
     li.innerHTML = '<h2>Our Menu</h2>';
-
-    li.addEventListener('click', switchActiveTab);
 
     tabSection.querySelector('#tab_list').appendChild(li);
   };

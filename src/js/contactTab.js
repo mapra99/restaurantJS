@@ -1,5 +1,3 @@
-import switchActiveTab from './tabGeneral';
-
 const ContactTab = (() => {
   const addTabtoList = (tabSection) => {
     const li = document.createElement('li');
@@ -7,8 +5,6 @@ const ContactTab = (() => {
     li.id = 'contact_tab';
     li.setAttribute('data-tab', 'contact');
     li.innerHTML = '<h2>Contact</h2>';
-
-    li.addEventListener('click', switchActiveTab);
 
     tabSection.querySelector('#tab_list').appendChild(li);
   };
