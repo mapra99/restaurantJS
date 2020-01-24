@@ -2,7 +2,7 @@
 
 > This is the Homepage of a Restaurant, built with Javascript and Webpack.
 
-![screenshot](./docs/pageScreenshot.jpg)
+![screenshot](./docs/Screenshot_2020-01-24%20Restaurant%20Page.jpg)
 
 ## Built With
 
