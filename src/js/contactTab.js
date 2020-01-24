@@ -13,15 +13,28 @@ const ContactTab = (() => {
     const article = document.createElement('article');
     article.classList.add('tab_content');
     article.id = 'contact_content';
-    article.innerHTML = `
+    const divMap = document.createElement('div');
+    divMap.id = 'contact_map';
+    divMap.innerHTML = `
     <h3>Find us here!</h3>
-    <iframe width="500" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-74.03711199760438%2C4.730624707320182%2C-74.03115749359132%2C4.733891193512506&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=18/4.73226/-74.03413">View Larger Map</a></small>
-    <h3>Or Contact us on</h3>
-    <a href='mailto:mapra99@gmail.com'>Email</a>
-    <a href='https://github.com/mapra99/'>GitHub</a>
-    <a href='https://twitter.com/MiguelPrada1'>Twiter</a>
-    <a href='https://www.linkedin.com/in/mprada/'>LinkedIn</a>
+    <iframe width="500" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-74.03711199760438%2C4.730624707320182%2C-74.03115749359132%2C4.733891193512506&amp;layer=mapnik"></iframe>
     `;
+
+    const divSocial = document.createElement('div');
+    divSocial.id = 'contact_social';
+    divSocial.innerHTML = `
+    <h3>Or Contact us on</h3>
+    <ul>
+    <li><a href='mailto:mapra99@gmail.com'>Email</a></li>
+    <li><a href='https://github.com/mapra99/'>GitHub</a></li>
+    <li><a href='https://twitter.com/MiguelPrada1'>Twiter</a></li>
+    <li><a href='https://www.linkedin.com/in/mprada/'>LinkedIn</a></li>
+    </ul>
+    `;
+
+    article.appendChild(divMap);
+    article.appendChild(divSocial);
+
     tabSection.appendChild(article);
   };
 

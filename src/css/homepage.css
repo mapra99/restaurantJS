@@ -15,10 +15,12 @@ h1 {
 
 h2{
   font-size: 2em;
+  font-weight: 600;
 }
 
 h3{
   font-size: 1.85em;
+  font-weight: 600;
 }
 
 p,
@@ -91,8 +93,17 @@ span {
 
 .tab_content{
   display: none;
+  margin: 10px 100px;
 }
 
-.active_tab_content{
-  display: block;
+.active_tab_content {
+  display: flex;
+}
+
+.active_tab_content li{
+  margin: 0 35px;
+}
+
+.tab_content div{
+  margin: 0 50px;
 }
