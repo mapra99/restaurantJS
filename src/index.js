@@ -1,2 +1,2 @@
-import './js/homepage';
+import './js/intro';
 import './js/tabs';
