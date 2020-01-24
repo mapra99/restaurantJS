@@ -1,3 +1,5 @@
+import ImageMenu from '../img/menu-food.jpg';
+
 const MenuTab = (() => {
   const addTabtoList = (tabSection) => {
     const li = document.createElement('li');
@@ -41,7 +43,7 @@ const MenuTab = (() => {
     `;
 
     const menuImage = document.createElement('img');
-    menuImage.src = './../src/img/menu-food.jpg';
+    menuImage.src = ImageMenu;
     menuImage.height = 250;
 
     article.appendChild(menuFood);

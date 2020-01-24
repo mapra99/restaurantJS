@@ -1,5 +1,9 @@
+import ImageBackground from '../img/bg-primary.jpg';
+
 const displayHome = (() => {
   const contentSection = document.getElementById('content');
+  contentSection.style.background = `url(${ImageBackground}) center/cover no-repeat fixed`;
+
   const introSection = document.createElement('section');
   introSection.id = 'intro';
 
